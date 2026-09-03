@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> NutriChef</title>
+</head>
+<body>
+    <header>
+
+        <a href="./index.html" aria-label="Ir al inicio">
+            <img src="./recursos/imagenes/logo (1) (2).jpg" alt="logo pagina">
+        </a>
+
+        <H1>NutriChef</H1>
+        <nav>
+            <a href="./index.html">
+                Inicio
+            </a>
+            <a href="./contacto.html">
+                Contacto
+            </a>
+        </nav>
+       
+    </header>
+    <main>
+        <h1>Contacto</h1>
+        <h2>Escribinos</h2>
+        <p>¿Listo para dejar de preocuparte por cocinar? Completa el formulario con tus
+            datos y preferencias, y me pondré en contacto para armar tu plan semanal de viandas
+        </p>
+        <form action="./contacto.html" method="post">
+            
+            <label for="id_nombre">Nombre completo</label>
+            <input type="text" name="nombre" id="id_nobre">
+            
+            
+            <label for="id_correo">Correo electronico</label>
+            <input type="text" name="Correo electronico" id="id_telefono">
+           
+           
+            <label for="id_planInteres">Plan de interés</label>
+            <select name="Plan de interés" id="id_planInteres">
+                <option value="F">Plan Fuerza</option>
+                <option value="D">Plan Definicion</option>
+                <option value="S">Plan solo snacks</option>
+            </select>
+            
+            <label for="id_alergias">Alergias o reestricciones alimentarias</label>
+            <textarea name="Alergias" id="id_alergias"></textarea>
+       
+        
+        <button type="reset">
+            Limpiar
+        </button>
+
+         <button type="submit">
+            Enviar
+         </button>
+
+        </form>
+        <h2>Dónde estamos</h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3406.8755744152445!2d-64.2376225!3d-31.3624126!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94329935cc654745%3A0x1597dfb169e0d32!2zQXYuIFJhZmFlbCBOw7rDsWV6IDQ2ODUsIFg1MDAwIEPDs3Jkb2Jh!5e0!3m2!1ses!2sar!4v1788439395228!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+    </main>
+    <hr>
+    <footer>
+        <ul>
+            <li>
+                <a href="https://instagram.com/@ProteMeals"  target="_blank">
+                    @NutriChef
+                </a>
+            </li>
+            <li>
+                Av. Rafael Nuñez 4685 -Bº Cerro de las Rosas
+            </li>
+        </ul>
+    </footer>
+
+</body>
+</html>
