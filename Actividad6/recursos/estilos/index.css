@@ -10,14 +10,76 @@ id
 
 /*FUENTE*/
 @font-face {
-  font-family: PoersenOne ;
-  src: url(./fuentes/PoetsenOne-Regular.ttf);
+  font-family: Prata ;
+  src: url(./fuentes/Prata-Regular.ttf);
 }
 
 html {
-  font-family: PoersenOne;
+  font-family: Prata;
   font-size: 16px;
   line-height: 1.5;
   color: #333;
   background-color: #f5f5f5;
+}
+
+.encabezado-principal {
+
+    /*Afecta el comportamiento externo e interno*/
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    background-color: #ffb121c3;
+    padding: 5px;
+}
+
+.encabezado-principal a img {
+    width: 120px;
+}
+.encabezado-principal nav a {
+    text-decoration: none;
+    color: #11671c;
+    font-weight: bold;
+    margin-left: auto;
+}
+.encabezado-principal h1 {
+    margin: 0 auto;
+    color: #f3ede3;
+}
+
+.contenido-principal{
+    max-width:900; 
+    margin: 40px auto;
+    padding: 30px 40px; 
+    background-color: #ffffff; 
+}
+
+.contenido-principal h2 {
+    color: #333; 
+    text-align: center; /* Centra el título principal */
+    margin-bottom: 30px; 
+    padding-bottom: 15px;
+    border-bottom: 2px solid #ffb121c3; /* Una línea divisora */
+}
+
+.contenido-principal h3 {
+    color: #444;
+    margin-top: 35px;
+    margin-bottom: 15px;
+}
+
+.contenido-principal .contenedor-form{
+
+    padding: 20px 20%
+}
+.contenido-principal .contenedor-form input {
+
+    padding: 10px
+}
+.contenido-principal .contenedor-form select {
+
+    padding: 10px
+}
+.contenido-principal .contenedor-form form{
+    display: flex;
+    flex-direction: column;
 }
