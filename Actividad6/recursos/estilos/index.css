@@ -6,3 +6,18 @@ id
 */
 
 /* */
+
+
+/*FUENTE*/
+@font-face {
+  font-family: PoersenOne ;
+  src: url(./fuentes/PoetsenOne-Regular.ttf);
+}
+
+html {
+  font-family: PoersenOne;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+  background-color: #f5f5f5;
+}
