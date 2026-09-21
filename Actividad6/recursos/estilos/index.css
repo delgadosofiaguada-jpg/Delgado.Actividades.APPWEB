@@ -7,7 +7,11 @@ id
 
 /* */
 
-
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 /*FUENTE*/
 @font-face {
   font-family: Prata ;
@@ -37,7 +41,7 @@ html {
 }
 .encabezado-principal nav a {
     text-decoration: none;
-    color: #11671c;
+    color: #c8250f;
     font-weight: bold;
     margin-left: auto;
 }
@@ -73,13 +77,41 @@ html {
 }
 .contenido-principal .contenedor-form input {
 
-    padding: 10px
+    padding: 15px
 }
 .contenido-principal .contenedor-form select {
 
-    padding: 10px
+    padding: 15px
 }
 .contenido-principal .contenedor-form form{
     display: flex;
     flex-direction: column;
+    
+}
+.contenido-principal .contenedor-form textarea{
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+.contenido-principal .contenedor-form button{
+    background-color: #ffb121c3;
+    color: #097534;
+    padding: 10px 20px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+.contenido-principal iframe{
+    width: 100%;
+}
+
+.pie-principal {
+    background-color: #ffb121dc;
+    color: #097534;
+    text-align:left;
+    padding: 20px;
+    margin-top: 40px;
+} 
+
+.pie-principal a {
+    color: #9d1b0a;
 }
