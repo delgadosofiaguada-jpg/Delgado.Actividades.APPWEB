@@ -1,0 +1,110 @@
+/* Reseteo básico y modelo de caja alternativo */
+* {
+    box-sizing: border-box; 
+}
+
+/* Selectores de TIPO globales */
+html,
+body {
+    margin: 0; 
+}
+
+html {
+    font-family: Poppins, Verdana, Geneva, Tahoma, sans-serif; 
+    font-size: 18px; 
+    
+}
+
+body {
+    background-color: #f4f4f9; 
+}
+
+a {
+    color: #333333; 
+    text-decoration: none; 
+}
+
+/* Selectores de CLASE para bloques principales de la plantilla */
+
+/* 1. ENCABEZADO */
+.encabezado-principal {
+    position: sticky; 
+    top: 0px; 
+    display: flex; 
+    flex-direction: row; 
+    justify-content: space-between; 
+    align-items: center; 
+    background-color: rgb(74, 77, 240); 
+    padding: 15px 5%; 
+}
+
+/* Selectores combinados en el encabezado */
+.encabezado-principal a img {
+    width: 50px; 
+}
+
+.encabezado-principal nav {
+    display: flex;
+    gap: 20px;
+}
+
+.encabezado-principal nav a {
+    color: white;
+    font-weight: bold;
+}
+
+/* 2. CONTENIDO PRINCIPAL */
+.contenido-principal {
+    background-color: rgb(255, 255, 255); 
+    padding: 40px 5%;
+    min-height: 80vh;
+}
+
+/* Selector combinado para imágenes dentro del main */
+.contenido-principal img {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 8px;
+}
+
+/* Contenedor específico para el formulario */
+.contenido-principal .contenedor-form {
+    padding: 50px; 
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.contenido-principal .contenedor-form form {
+    display: flex; 
+    flex-direction: column; 
+    gap: 15px;
+}
+
+
+
+/* 3. PIE PRINCIPAL */
+.pie-principal {
+    padding: 2px 1%; 
+    background-color: rgb(74, 77, 240); 
+    color: white;
+}
+
+.pie-principal ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding: 20px;
+    margin: 0;
+}
+
+.pie-principal a {
+    color: white;
+}
+
+/* Media Queries para responsividad */
+@media (width > 640px) and (width < 1200px) { 
+    .contenido-principal {
+        padding: 40px 10%;
+    }
+}
