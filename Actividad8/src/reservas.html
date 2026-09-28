@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Retiro Sustentable - Reservas</title>
+    <link rel="stylesheet" href="./recursos/css/index.css">
 </head>
 <body>
-    <header>
+    <header class="encabezado-principal">
         <a href="./index.html" aria-label="Ir al inicio">
             <img src="./recursos/imagenes/logo-rs.svg" alt="Logo cabaña">
         </a>
@@ -23,7 +24,7 @@
         <h1>Reservas</h1>
         <h2>Contactanos</h4>
         <div class="contenido-principal contenedor-form form">
-            <form action="./contacto.html" method="post">
+            <form action="./contacto.html" method="get">
                 <label for="id_nobre">Nombre</label>
                 <input type="text" name="nombre" id="id_nombre">
                 
@@ -35,10 +36,10 @@
                 <input type="text" name="email" id="id_email">
                 
                 <label for="id_fechaInicio">Fecha desde</label>
-                <input type="date" name="fechainicio" id="id_fechadesde">
+                <input type="date" name="fechaInicio" id="id_fechaInicio">
                 
                   <label for="id_fechaFin">Fecha hasta</label>
-                <input type="date" name="fechafin" id="id_fechahasta">
+                <input type="date" name="fechaFin" id="id_fechaFin">
 
                 <label for="id_comentario">Comentario</label>
                 <textarea name="comentario" id="id_comentario"></textarea>
@@ -53,7 +54,7 @@
             </div>
         </form>
     </main>
-     <footer>
+     <footer class="pie-principal">
         <ul>
             <li>
                  <p>&copy; 2026 Retiro Sustentable. Todos los derechos reservados.</p>

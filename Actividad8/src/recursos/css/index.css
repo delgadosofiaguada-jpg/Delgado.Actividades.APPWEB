@@ -8,4 +8,33 @@
 }
 
 
-html{}
+html{ /* ELEMENTO RAIZ, Afecta a todos los textos y se toma como referencia*/
+    font-family: Sora;
+    font-size: 16px;
+}
+
+
+.encabezado-principal{
+    position: sticky;
+    background-color: #f2f3e0;
+    display: flex;
+}
+
+.encabezado-principal a{
+    color: #515f46;
+}
+
+.encabezado-principal a img{
+   max-height: 400px; 
+    width: auto;
+}
+.contenido-principal{
+
+
+}
+
+.pie-principal{
+
+    background-color: #f2f3e0;
+
+}
