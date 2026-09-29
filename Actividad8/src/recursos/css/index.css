@@ -3,38 +3,67 @@
     src: url(./fuentes/Sora-Regular.ttf);
 }
 
-*{
+/* 
+Orden de Cascada y Especificidad: 
+Arriba los selectores universales y de tipo, ya que tienen menor especificidad. 
+Sirven para resetear estilos o dar la base del documento.
+*/
+
+* {
+    /* Implementación del modelo de caja alternativo para que padding y border no sumen al ancho/alto total */
     box-sizing: border-box;
 }
 
-
-html{ /* ELEMENTO RAIZ, Afecta a todos los textos y se toma como referencia*/
-    font-family: Sora;
+html { 
+    /* ELEMENTO RAIZ. Se establece la tipografía y el tamaño de fuente general (16px) */
+    font-family: 'Sora', sans-serif;
     font-size: 16px;
 }
 
+/* 
+Selectores de clase abajo. 
+Tienen mayor especificidad, por lo que sobreescribirán estilos generales heredados si hubiera conflictos. 
+*/
 
-.encabezado-principal{
+.encabezado-principal {
     position: sticky;
+    top: 0; /* Asegura el sticky en algunos navegadores */
     background-color: #f2f3e0;
+    /* Flexbox organiza el layout en el header, cambiando el comportamiento para alinear los elementos internos (logo y nav) */
     display: flex;
+    justify-content: space-between; /* Separar el logo del menú */
+    align-items: center;
+    padding: 1rem;
 }
 
-.encabezado-principal a{
+.encabezado-principal a {
     color: #515f46;
+    text-decoration: none;
 }
 
-.encabezado-principal a img{
-   max-height: 400px; 
+.encabezado-principal a img {
+    max-height: 90px; 
     width: auto;
 }
-.contenido-principal{
 
-
+.contenido-principal {
+    /* Regla solicitada para el bloque de contenido. */
+    padding: 2rem;
 }
 
-.pie-principal{
-
+.pie-principal {
+    /* El fondo es exactamente del mismo color que el encabezado */
     background-color: #f2f3e0;
+    padding: 2rem;
+}
 
+/* Clase añadida para reemplazar el <button> dentro del <a> en index.html */
+.btn-reservar {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #515f46;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
 }
