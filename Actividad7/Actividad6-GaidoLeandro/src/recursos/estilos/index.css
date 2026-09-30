@@ -17,6 +17,9 @@ html {
 
 body {
     background-color: #f4f4f9; 
+    display:grid;
+    grid-template-rows: auto 1fr auto; /* Define el alto del header, main y footer */
+    min-height: 100vh;
 }
 
 a {
@@ -107,4 +110,16 @@ a {
     .contenido-principal {
         padding: 40px 10%;
     }
+}
+
+.pie-principal .mensajeria{
+    list-style: none;
+    position: fixed; /* toma como referencia al viewport */
+    bottom: 75px;;
+    right: 20px;
+
+}
+.icono-ws {
+  width: 30px;
+  height: auto;
 }
